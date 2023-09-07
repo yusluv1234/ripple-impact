@@ -19,7 +19,12 @@ input LoginInput {
   password: String
 }
 
+type Query {
+  user(id: ID!): User
+}
+
 type Mutation {
   registerUser(registerInput: RegisterInput): User
+  loginUser(loginInput: LoginInput): User
 }
 `

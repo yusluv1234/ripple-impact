@@ -3,7 +3,7 @@ const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");
 const { default: mongoose } = require("mongoose");
 
-const MONGODB = ""
+const MONGODB = "mongodb+srv://yusluv124:jolayemi@cluster0.suakkk4.mongodb.net/"
 
 const server = new AppoloServer({
   typeDefs, resolvers
